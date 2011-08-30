@@ -1,0 +1,7 @@
+*.iws
+*.iml
+*.ipr
+target/
+reports/
+artifacts/
+.DS_Store

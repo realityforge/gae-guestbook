@@ -28,7 +28,7 @@ define 'gae-guestbook' do
 
   iml.add_web_facet
 
-  compile.with :javax_servlet
+  compile.with :javax_servlet, :appengine_api
 
   package(:war)
 
@@ -37,6 +37,6 @@ define 'gae-guestbook' do
 
   doc.using :javadoc, { :tree => false, :since => false, :deprecated => false, :index => false, :help => false }
 
-  ipr.add_exploded_war_artifact(project, :name => 'gae-guestbook')
+  ipr.add_exploded_war_artifact(project, :name => 'gae-guestbook', :build_on_make => true)
   iml.add_jruby_facet
 end

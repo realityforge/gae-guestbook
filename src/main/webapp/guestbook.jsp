@@ -12,6 +12,9 @@
 <%@ page import="com.google.appengine.api.datastore.FetchOptions" %>
 
 <html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+</head>
 <body>
 
 <%

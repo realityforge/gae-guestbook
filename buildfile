@@ -32,6 +32,8 @@ define 'gae-guestbook' do
 
   package(:war)
 
+  gae.sdk_dir = _("../appengine-java-sdk-1.5.3")
+
   # Remove the IDEA generated artifacts
   project.clean { rm_rf project._(:artifacts) }
 
